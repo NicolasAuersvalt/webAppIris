@@ -1,19 +1,21 @@
-# Use uma imagem base com Python
+# Use a base image with Python
 FROM python:3.12-slim
 
-# Instale as dependências do sistema
+# Install system dependencies
 RUN apt-get update && apt-get install -y \
     build-essential \
     && rm -rf /var/lib/apt/lists/*
 
-# Instale as dependências do Python
+# Install the specific version of pip
+RUN pip install --upgrade pip==24.2
+
+# Install Python dependencies
 COPY requirements.txt .
-RUN pip install --upgrade pip
 RUN pip install -r requirements.txt
 
-# Copie o código do aplicativo para o contêiner
+# Copy your application code to the container
 COPY . /app
 WORKDIR /app
 
-# Defina o comando para iniciar o aplicativo
-CMD ["streamlit", "run", "webapp.py"]
+# Set the command to run your app
+CMD ["streamlit", "run", "webApp.py"]
