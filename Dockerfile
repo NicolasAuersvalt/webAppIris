@@ -7,11 +7,11 @@ RUN apt-get update && apt-get install -y \
     && rm -rf /var/lib/apt/lists/*
 
 # Install the specific version of pip
-RUN pip install --upgrade pip==24.2
+RUN pip3 install --upgrade pip==24.2
 
 # Install Python dependencies
 COPY requirements.txt .
-RUN pip install -r requirements.txt
+RUN pip3 install -r requirements.txt
 
 # Copy your application code to the container
 COPY . /app
