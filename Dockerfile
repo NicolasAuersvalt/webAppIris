@@ -7,7 +7,7 @@ RUN apt-get update && apt-get install -y \
     && rm -rf /var/lib/apt/lists/*
 
 # Install the specific version of pip
-RUN pip3 install --upgrade pip==24.2
+RUN pip3 install --upgrade pip
 
 # Install Python dependencies
 COPY requirements.txt .
