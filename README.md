@@ -121,7 +121,7 @@ plt.ylabel('Frequência')
 plt.show()
 </code></pre>
 
-<img src="">
+<img src="https://github.com/NicolasAuersvalt/webAppIris/blob/db288a575afb6e404ff4388e71848287c770f5b6/Imagens/2_histograma_1.png">
     
 A visualização mostra dois picos principais (bimodal), correspondendo às diferentes espécies do conjunto de dados. 	Espécies como Iris setosa, que tem pétalas menores, têm uma distribuição de largura de pétalas mais concentrada em valores menores, enquanto outras espécies como a virginica têm valores maiores.
 
@@ -140,7 +140,7 @@ plt.show()
 
 </code></pre>
 
-<img src="">
+<img src="https://github.com/NicolasAuersvalt/webAppIris/blob/db288a575afb6e404ff4388e71848287c770f5b6/Imagens/3_boxplot_1.png">
 
 As medidas de comprimento e largura são mais eficazes na discriminação entre as espécies, especialmente para distinguir setosa das outras duas espécies. Versicolor e virginica também podem ser diferenciadas com base nessas características, mas com menor clareza em comparação com setosa. As medidas das sépalas oferecem alguma capacidade de discriminação, mas são menos eficazes que as características das pétalas.
 
@@ -185,7 +185,7 @@ plt.tight_layout()
 plt.show()
 </code></pre>
 
-<img src="">
+<img src="https://github.com/NicolasAuersvalt/webAppIris/blob/db288a575afb6e404ff4388e71848287c770f5b6/Imagens/4_boxplot_2.png">
 
 Analisando-os, percebe-se que a espécie Setosa tem as características menores e menos distribuídas com alguns outliers. A Versicolor tem as características médias e a Virginica tem as características mais importantes.
 Vemos que como há interseção entre as alturas de cada box, os dados não estão bem distribuídos, isto é, com separações claras, tendo dados de um cluster em outro.
@@ -282,7 +282,7 @@ plt.tight_layout()
 plt.show()
 </code></pre>
 
-<img src="">
+<img src="https://github.com/NicolasAuersvalt/webAppIris/blob/db288a575afb6e404ff4388e71848287c770f5b6/Imagens/5_ajuste.png">
 
 A partir desse gráfico, percebe-se que:
     <ul>
@@ -295,7 +295,7 @@ A partir desse gráfico, percebe-se que:
 Além disso, conclui-se que o gráfico com melhor distribuição gaussiana é com relação à largura da sépala.
 É possível concluir, portanto, onde pode-se encontrar a maior concentração de sépalas ou pétalas com determinadas características utilizando como base tal ajuste. Além disso, há alguns vales entre as frequências, indicando que possivelmente não há dados nesta região. Para validar essa hipótese, aumenta-se a quantidade de retângulos mostrados no gráfico:
 
-<img src="">
+<img src="https://github.com/NicolasAuersvalt/webAppIris/blob/db288a575afb6e404ff4388e71848287c770f5b6/Imagens/6_ajustenormal.png">
 
 
 ## 4. TÉCNICAS DE CLUSTERING
@@ -335,11 +335,11 @@ plt.ylabel('Largura da Sépala (cm)')
 plt.show()
 </code></pre>
 
-<img src="">
+<img src="https://github.com/NicolasAuersvalt/webAppIris/blob/db288a575afb6e404ff4388e71848287c770f5b6/Imagens/7_clustering.png">
 
 A partir do gráfico acima, infere-se que a espécie Setosa tem pétalas com comprimentos e larguras menores, Versicolor está no meio das outras duas espécies em termos de comprimento e largura da pétala e Virginica tem o maior comprimento e largura de pétalas.
 
-<img src="">
+<img src="https://github.com/NicolasAuersvalt/webAppIris/blob/db288a575afb6e404ff4388e71848287c770f5b6/Imagens/8_clustering.png">
 
 A partir do gráfico acima, percebe-se que a espécie Setosa tem tamanhos de sépalas menores, mas larguras de sépalas maiores. A Versicolor está no meio das outras duas espécies em termos de comprimento e largura da sépala. E a espécie Virginica tem tamanhos de sépala maiores, mas larguras de sépala menores.
 
@@ -348,21 +348,21 @@ O agrupamento hierárquico é outro método de aprendizagem não supervisionado 
 Inicialmente, o método procura agrupar pontos próximos sucessivamente, até que haja N clusters restante. Então, o algoritmo pode calcular os métodos de ligação das seguintes formas:
 1. A menor distância entre os pontos mais próximos
 
-<img src="">
+<img src="https://github.com/NicolasAuersvalt/webAppIris/blob/db288a575afb6e404ff4388e71848287c770f5b6/Imagens/9_distancia.png">
 
 2. A distância entre os pontos mais distantes
 
-<img src="">
+<img src="https://github.com/NicolasAuersvalt/webAppIris/blob/db288a575afb6e404ff4388e71848287c770f5b6/Imagens/10_distancia.png">
 
 3. A distância média entre os clusters é calculada pela soma entre cada par e depois dividida pelo número total de conjuntos de dados.
 
 4. Distância entre os centróides
 
-<img src="">
+<img src="https://github.com/NicolasAuersvalt/webAppIris/blob/db288a575afb6e404ff4388e71848287c770f5b6/Imagens/11_distancia.png">
 
 É possível visualizar as distâncias através de um Dendograma, que exemplifica, similarmente a uma árvore, a distância entre os pontos mais próximos (mostrado na parte inferior) e cresce conforme diminui os agrupamentos (não mais pontos isolados).
 
-<img src="">
+<img src="https://github.com/NicolasAuersvalt/webAppIris/blob/db288a575afb6e404ff4388e71848287c770f5b6/Imagens/12_dendograma.png">
 
 <pre><code># Carregar o dataset Iris
 iris = load_iris()
@@ -417,9 +417,9 @@ plt.ylabel('Largura da Pétala') # Sepal Width
 plt.show()
 </code></pre>
 
-<img src="">
+<img src="https://github.com/NicolasAuersvalt/webAppIris/blob/db288a575afb6e404ff4388e71848287c770f5b6/Imagens/13_HC.png">
 
-<img src="">
+<img src="https://github.com/NicolasAuersvalt/webAppIris/blob/db288a575afb6e404ff4388e71848287c770f5b6/Imagens/14_hc.png">
 
 Roxo = Iris Setosa; Amarelo = Iris Versicolor; Verde = Iris Virginica.
 
@@ -429,21 +429,21 @@ Note que há interseção entre os clusters, indicando que o método não é abs
 
 Para avaliar a acurácia dos métodos de clusterização, é selecionada uma porcentagem de dados para treinamento e o restante para teste (80:20).
 
-<img src="">
+<img src="https://github.com/NicolasAuersvalt/webAppIris/blob/db288a575afb6e404ff4388e71848287c770f5b6/Imagens/15_cross-validation.png">
 
 ## 6. K-NN (K-Nearest Neighbour)
 
 Seleciona-se a partir de uma clusterização 80% dos pontos divididos em 4 folders, tendo 20% em cada um. A partir disso, sorteia ou seleciona algum ponto (de preferência pontos críticos ou muito distante dos clusters), calcula a distância entre ele e K pontos rotulados (clusterizados) próximos a ele. Então, rotula este ponto em função da distância e da quantidade de pontos próximos a ele, e depois compara com o rótulo do ajuste. 
 Em sequência, seleciona outro folder para teste e retém os outros para treinamento, mantendo este ciclo até que tenha sido considerado os 5 folders como treino.
 
-<img src="">
+<img src="https://github.com/NicolasAuersvalt/webAppIris/blob/db288a575afb6e404ff4388e71848287c770f5b6/Imagens/16_knn.png">
 
 ## 7. CONFUSION MATRIX
 
 A fim de se avaliar os dados, é possível utilizar previsões, possuindo as informações reais da classificação, do que é esperado ou não, e calcular essas previsões. 
 Por exemplo, caso uma espécime tenha sido classificada como virginica, mas esperava-se setosa (pressupõe o dado real para avaliação), então há um desvio de resultado no modelo, estando aberto a correções e ajustes.
 
-<img src="">
+<img src="https://github.com/NicolasAuersvalt/webAppIris/blob/db288a575afb6e404ff4388e71848287c770f5b6/Imagens/17_confusion.png">
 
 ## 7.1 Input
 <pre><code>from header import *
