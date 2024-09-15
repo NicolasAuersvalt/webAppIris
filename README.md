@@ -360,7 +360,7 @@ Inicialmente, o método procura agrupar pontos próximos sucessivamente, até qu
 
 <img src="https://github.com/NicolasAuersvalt/webAppIris/blob/db288a575afb6e404ff4388e71848287c770f5b6/Imagens/11_distancia.png">
 
-É possível visualizar as distâncias através de um Dendograma, que exemplifica, similarmente a uma árvore, a distância entre os pontos mais próximos (mostrado na parte inferior) e cresce conforme diminui os agrupamentos (não mais pontos isolados).
+É possível visualizar as distâncias através de um Dendrograma, que exemplifica, similarmente a uma árvore, a distância entre os pontos mais próximos (mostrado na parte inferior) e cresce conforme diminui os agrupamentos (não mais pontos isolados).
 
 <img src="https://github.com/NicolasAuersvalt/webAppIris/blob/db288a575afb6e404ff4388e71848287c770f5b6/Imagens/12_dendograma.png">
 
@@ -384,6 +384,8 @@ plt.xlabel('Índice das Amostras')
 plt.ylabel('Distância')
 plt.show()
 </code></pre>
+
+<img src="https://github.com/NicolasAuersvalt/webAppIris/blob/db288a575afb6e404ff4388e71848287c770f5b6/Imagens/13_HC.png">
 
 <pre><code># Carregar o dataset Iris
 iris = load_iris()
@@ -416,8 +418,6 @@ plt.ylabel('Largura da Pétala') # Sepal Width
 # Mostrar o gráfico
 plt.show()
 </code></pre>
-
-<img src="https://github.com/NicolasAuersvalt/webAppIris/blob/db288a575afb6e404ff4388e71848287c770f5b6/Imagens/13_HC.png">
 
 <img src="https://github.com/NicolasAuersvalt/webAppIris/blob/db288a575afb6e404ff4388e71848287c770f5b6/Imagens/14_hc.png">
 
