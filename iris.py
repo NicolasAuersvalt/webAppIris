@@ -6,7 +6,7 @@ import streamlit as st
 
 def box_plot():
     st.title("Histograma")
-    
+
     # Carregar o dataset iris
     iris = load_iris()
     iris_df = pd.DataFrame(data=iris.data, columns=iris.feature_names)
@@ -14,7 +14,7 @@ def box_plot():
     iris_df['species'] = iris_df['species'].map({0: 'setosa', 1: 'versicolor', 2: 'virginica'})
 
     st.write("O histograma é uma ótima maneira de visualizar a distribuição de uma variável contínua. Neste caso, ele mostra como as larguras das pétalas estão distribuídas no conjunto de dados Iris, com número de bins (intervalos) como 20.")
-    
+
     # Criar o histograma da largura das pétalas
     plt.figure(figsize=(8, 6))
     sns.histplot(iris_df['petal width (cm)'], kde=False, bins=20, color='skyblue')
@@ -56,7 +56,9 @@ def box_plot():
     # Ajustar o layout para evitar sobreposição
     plt.tight_layout()
 
-    st.write("Analisando-os, percebe-se que a espécie Setosa tem as características menores e menos distribuídas com alguns outliers. A Versicolor tem as características médias e a Virginica tem as características mais importantes. Vemos que como há interseção entre as alturas de cada box, os dados não estão bem distribuídos, isto é, com separações claras, tendo dados de um cluster em outro.")
-
     # Mostrar a figura
     st.pyplot(plt)
+
+    st.write("Analisando-os, percebe-se que a espécie Setosa tem as características menores e menos distribuídas com alguns outliers. A Versicolor tem as características médias e a Virginica tem as características mais importantes. Vemos que como há interseção entre as alturas de cada box, os dados não estão bem distribuídos, isto é, com separações claras, tendo dados de um cluster em outro.")
+
+    
