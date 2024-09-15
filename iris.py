@@ -198,10 +198,14 @@ def knn_classifier():
     conf_matrix = confusion_matrix(y_test, y_pred)
     accuracy = accuracy_score(y_test, y_pred)
 
+    
+    # Exibindo os centróides
+    # st.write("Centróides:\n", kmeans.cluster_centers_)
+
+    
     st.write("Confusion Matrix:\n")
-    st.write(f"{conf_matrix[0]}\n")
-    st.write(f"{conf_matrix[1]}\n")
-    st.write(f"{conf_matrix[2]}\n")
+    st.write(conf_matrix)
+    
     st.write(f"Acurácia: {accuracy:.4f}")
 
     cv_scores = cross_val_score(knn, X, y, cv=10)
