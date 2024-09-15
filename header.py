@@ -12,5 +12,6 @@ from scipy.spatial.distance import pdist
 from scipy.cluster.hierarchy import linkage, fcluster, dendrogram
 from sklearn.datasets import load_iris
 from sklearn.cluster import KMeans
+from sklearn.linear_model import LinearRegression
 import seaborn as sns
 import pandas as pd
