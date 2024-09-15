@@ -32,7 +32,7 @@ def main():
                                             "Histogramas com Ajuste Normal do Dataset Iris",
                                             "Classificador KNN"])
 
-        if iris_option == "K-Clustering K-means":
+        if iris_option == "Clustering K-means":
             kmeans_clustering()
         elif iris_option == "Clustering Hierárquico":
             scatter_with_hc_clusters()
