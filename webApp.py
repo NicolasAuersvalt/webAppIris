@@ -27,13 +27,16 @@ def main():
 
     elif page == "Projeto Iris":
         iris_option = st.sidebar.selectbox("Escolha uma Opção:",
-                                           ["Clustering K-means",
+                                           ["BoxPlot",
+                                            "Clustering K-means",
                                             "Clustering Hierárquico",
                                             "Histogramas com Ajuste Normal do Dataset Iris",
                                             "Classificador KNN"])
 
         if iris_option == "Clustering K-means":
             kmeans_clustering()
+        elif iris_option == "BoxPlot":
+            box_plot()
         elif iris_option == "Clustering Hierárquico":
             scatter_with_hc_clusters()
         elif iris_option == "Histogramas com Ajuste Normal do Dataset Iris":
